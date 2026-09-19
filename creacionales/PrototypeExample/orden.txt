@@ -1,0 +1,3 @@
+1 - crear prototipo (interfaz) - metodos del clon
+2 - crear prototipo concreto (modelo)
+3 - crear prototipo clonado (clon)

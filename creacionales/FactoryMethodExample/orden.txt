@@ -1,0 +1,4 @@
+1 - crear producto abstracto (interfaz) 
+2 - crear producto o productos concretos (modelo) 
+3 - crear al creador abstracto (la fabrica)
+4 - crear a creadores concretos (fabricas)

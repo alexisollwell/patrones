@@ -1,0 +1,4 @@
+1 - crear producto concreto (modelo)
+2 - crear interfaz de builder los pasos de creacion de producto
+3 - crear builder concreto (implementacion) que cumple con interfaz
+4 - crear director que usa interfaz de builder para construir producto concreto
