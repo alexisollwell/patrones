@@ -1,0 +1,17 @@
+Builder
+
+A menudo, construir consultas SQL complejas concatenando strings en 
+código puede llevar a errores de sintaxis o de inyección SQL. Quieres 
+desarrollar una herramienta que construya consultas dinámicamente de 
+forma fluida (Fluent Interface).
+
+1. Crea una interfaz `IQueryBuilder` que contenga métodos como:
+   - `Select(string[] campos)`
+   - `From(string tabla)`
+   - `Where(string condicion)`
+   - `OrderBy(string campo, string direccion)`
+   - `Limit(int cantidad)`
+2. Crea una clase `SqlQueryBuilder` que implemente la interfaz 
+y vaya almacenando las partes de la consulta.
+3. Implementa un método `GetSQL()` que ensamble todas las partes 
+en una única cadena SQL bien formateada.

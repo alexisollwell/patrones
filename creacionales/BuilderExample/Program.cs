@@ -23,6 +23,7 @@ namespace BuilderExample
             Console.WriteLine("\n--- Pizza Personalizada por el Cliente ---");
             builder.ConstruirMasa();
             builder.ConstruirSalsa();
+            builder.ConstruirIngredientes();
             builder.ObtenerPizza().MostrarPizza();
         }
     }

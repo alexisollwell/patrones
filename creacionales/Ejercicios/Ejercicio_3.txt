@@ -1,0 +1,21 @@
+Prototype
+
+Estás programando un videojuego RPG. Hay muchos enemigos en pantalla. 
+Leer desde el disco o desde una base de datos los "stats" base 
+(salud, daño, lista de habilidades, inventario) para cada uno de los 
+100 Goblins que aparecen en pantalla causaría lag severo.
+
+1. Crea una clase `Enemigo` que tenga atributos primitivos (Vida, Daño) 
+pero también atributos de tipo referencia, como una `List<string> Habilidades` 
+o una clase anidada `Arma`.
+2. Haz que `Enemigo` implemente la interfaz `ICloneable` 
+(o tu propia interfaz de Prototipo).
+3. Si usas `MemberwiseClone()`, la lista de habilidades 
+y el arma se copiarán por referencia. ¡Si un clon pierde su arma, 
+todos los clones la pierden! 
+4. Implementa una Copia Profunda en el método `Clonar()`, 
+asegurándote de instanciar nuevas listas y nuevos objetos internos 
+copiando sus valores, de modo que cada clon sea totalmente independiente.
+5. Crea un "Registro de Prototipos" (Un diccionario) donde 
+guardes un "Orco", un "Goblin" y un "Troll" base al inicio del 
+juego. Luego, clónalos a voluntad en el `Main`.

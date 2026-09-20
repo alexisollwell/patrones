@@ -1,0 +1,20 @@
+Factory Method
+
+Estás desarrollando una pequeña librería gráfica que debe funcionar en 
+múltiples sistemas operativos: Windows, macOS y Linux. Cada sistema 
+operativo tiene su propia forma de renderizar componentes visuales 
+(como Botones y Cajas de Texto).
+
+En lugar de llenar el código de condicionales 
+
+(`if(os == "Windows") { ... }`)
+
+debes implementar el patrón Factory Method.
+
+1. Crea una interfaz `IComponenteUI` con un método `Renderizar()`.
+2. Crea una interfaz `IDialogoFactory` que declare métodos como `CrearBoton()` y `CrearCajaTexto()`.
+3. Implementa familias de productos concretos: `BotonWindows`, `BotonMac`, `TextoWindows`, `TextoMac`.
+4. Implementa fábricas concretas: `WindowsDialogoFactory` y `MacDialogoFactory`.
+5. En el programa principal, simula la lectura de la configuración del sistema para instanciar 
+la fábrica correcta una sola vez y luego úsala para construir una pantalla de "Login" que 
+renderice los componentes.
