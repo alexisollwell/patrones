@@ -1,0 +1,4 @@
+1 - crear interfaz base para el componente
+2 - crear componente concreto que implementa la interfaz base (la funcionalidad original)
+3 - crear clase abstracta decoradora que implementa la interfaz base y contiene una referencia a un objeto de esa misma interfaz
+4 - crear decoradores concretos que heredan del decorador base y añaden comportamientos extra antes o despues de llamar al componente envuelto

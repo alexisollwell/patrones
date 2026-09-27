@@ -1,0 +1,4 @@
+1 - crear la interfaz esperada por el cliente (Target)
+2 - crear la clase o servicio existente que es incompatible (Adaptee)
+3 - crear la clase adaptadora que implementa la interfaz del cliente y envuelve al servicio incompatible (Adapter)
+4 - el cliente utiliza exclusivamente la interfaz esperada, ajeno a la conversion

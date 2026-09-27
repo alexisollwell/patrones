@@ -1,0 +1,4 @@
+1 - crear la interfaz del implementador (la que realiza el trabajo de bajo nivel, ej: obtener datos)
+2 - crear los implementadores concretos (las diferentes formas de hacer ese trabajo)
+3 - crear la clase base de abstraccion (la logica de alto nivel o UI) que contiene una referencia a la interfaz del implementador
+4 - crear abstracciones refinadas (las diferentes variantes de UI) que usan el implementador inyectado
