@@ -1,0 +1,28 @@
+Ejercicio: Consulta de Clima
+
+Planteamiento del Problema:
+Imagina que tienes un sistema meteorológico antiguo en tu aplicación que 
+obtiene la temperatura actual utilizando una interfaz propia llamada `IClimaAntiguo`. 
+Tu sistema espera que el clima se solicite pasando únicamente el nombre de la ciudad 
+como un string y espera que devuelva la temperatura en grados Celsius como un número 
+decimal.
+
+Sin embargo, has decidido actualizar tu sistema para usar un servicio externo 
+moderno y real: la API de Open-Meteo. Esta API externa requiere que la consulta 
+se realice utilizando coordenadas (latitud y longitud) en lugar del nombre de la 
+ciudad, y devuelve un objeto JSON complejo con mucha más información de la que tu 
+sistema requiere.
+
+Datos necesarios para ejecutar la API real:
+- API a utilizar: Open-Meteo (es pública y no requiere API Key)
+- Método HTTP: GET
+- Endpoint de consulta para clima actual: 
+  https://api.open-meteo.com/v1/forecast?latitude={LATITUD}&longitude={LONGITUD}&current_weather=true
+
+Ejemplo de llamada real (Ciudad de México):
+https://api.open-meteo.com/v1/forecast?latitude=19.42847&longitude=-99.12766&current_weather=true
+
+Coordenadas de ejemplo:
+- "Mexico" -> Lat: 19.42847, Lon: -99.12766
+- "Madrid" -> Lat: 40.4165, Lon: -3.70256
+- "Bogota" -> Lat: 4.6097, Lon: -74.0817
