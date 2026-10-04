@@ -13,16 +13,17 @@ namespace ChainOfResponsibility
             var weatherHandler = new WeatherHandler();
 
             geoHandler.SetNext(weatherHandler);
+            //weatherHandler.SetNext(poblacion);
 
             var ipsToTest = new[]
             {
                 "189.215.231.10", // México
                 "8.8.8.8",        // USA
-                "invalid_ip"      // error
+                "dfkmsgkndsfk"      // error
             };
 
             foreach (var ip in ipsToTest)
-            {
+            {//mexico
                 var requestData = new IpRequestData { IpAddress = ip };
                 
                 var result = await geoHandler.HandleAsync(requestData);

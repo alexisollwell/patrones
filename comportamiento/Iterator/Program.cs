@@ -12,7 +12,7 @@ namespace Iterator
             var iterator = pokeCollection.CreateIterator();
 
             int counter = 0;
-            int limit = 25;
+            int limit = 2500;
 
             Console.WriteLine($"Vamos a iterar sobre los primeros {limit} Pokémon.\n");
 
