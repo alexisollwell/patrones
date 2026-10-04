@@ -1,0 +1,4 @@
+1 - crear interfaz de estrategia (IPaymentStrategy)
+2 - crear estrategias concretas (CreditCardPayment, PayPalPayment, CryptoPayment)
+3 - crear clase de contexto que usa la interfaz de estrategia (ShoppingCart)
+4 - crear cliente que configura el contexto con una estrategia especifica (Program)

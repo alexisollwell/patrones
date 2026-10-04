@@ -1,0 +1,6 @@
+1 - crear modelo de datos a iterar (Pokemon)
+2 - crear interfaz iterador con metodos para recorrer (IIterator)
+3 - crear interfaz agregado que crea iteradores (IAggregate)
+4 - crear iterador concreto para recorrer la coleccion (PokeApiIterator)
+5 - crear coleccion concreta que devuelve su iterador (PokeApiCollection)
+6 - crear cliente que recorre usando la interfaz del iterador (Program)

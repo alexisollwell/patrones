@@ -10,7 +10,8 @@ namespace AdapterPattern
         static void Main(string[] args)
         {            
             ApiExterna apiExterna = new ApiExterna();
-            IUsuarioSistema usuario = new UsuarioApiAdapter(apiExterna, 2);
+
+            IUsuarioSistema usuario = new UsuarioApiAdapter(apiExterna, 5);
             Console.WriteLine($"Nombre: {usuario.ObtenerNombreCompleto()}");
             Console.WriteLine($"Correo: {usuario.ObtenerCorreo()}");            
         }

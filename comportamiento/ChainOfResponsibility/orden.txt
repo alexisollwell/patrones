@@ -1,0 +1,5 @@
+1 - crear modelo de datos que pasa por la cadena (IpRequestData)
+2 - crear interfaz de manejador (IHandler)
+3 - crear manejador base abstracto que implementa la logica de siguiente eslabon
+4 - crear manejadores concretos (GeolocationHandler, WeatherHandler)
+5 - crear cliente que ensambla la cadena y envia peticiones (Program)
